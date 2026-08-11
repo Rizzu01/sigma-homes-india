@@ -1,0 +1,2 @@
+import InnerPage from '@/components/InnerPage';
+export default function Page(){return <InnerPage kicker="PROJECTS" title={<>Sigma Builders<br/><i>&amp; Developers</i></>} intro="Sigma Builders & Developers" sections={[{title:'Our Business Divisions',items:['Residential Townships','Luxury Villas','Group Housing','Commercial Development','Mixed Use Projects','Integrated Townships']},{title:'Sigma Commercial',items:['Office Spaces','Retail Shops','Showrooms','Business Parks','Warehouses','Industrial Investments']}]}/>} 

@@ -1,0 +1,2 @@
+import { values } from '@/data/site-data';
+export default function Values(){return <section className="values section-pad"><div className="container"><div data-aos="fade-up"><p className="kicker">OUR CORE VALUES</p><h2>Our Core <i>Values</i></h2></div><div className="values-grid">{values.map((v,i)=><div key={v} data-aos="fade-up" data-aos-delay={i*50}><span>{String(i+1).padStart(2,'0')}</span><b>{v}</b></div>)}</div></div></section>}

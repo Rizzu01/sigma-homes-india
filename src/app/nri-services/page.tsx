@@ -1,0 +1,2 @@
+import InnerPage from '@/components/InnerPage';
+export default function Page(){return <InnerPage kicker="SIGMA NRI SERVICES" title={<>Sigma <i>NRI Services</i></>} intro="Professional support for NRIs looking to buy, invest, verify, manage or rent property in India." sections={[{title:'Sigma NRI Services',items:['Online Consultation','Virtual Site Visit','Investment Planning','Legal Verification','Property Management','Rental Management']}]}/>} 

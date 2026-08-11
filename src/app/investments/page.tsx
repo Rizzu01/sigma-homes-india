@@ -1,0 +1,2 @@
+import InnerPage from '@/components/InnerPage';
+export default function Page(){return <InnerPage kicker="SIGMA INVESTMENTS" title={<>Sigma <i>Investments</i></>} intro="Real estate research, investment planning and portfolio management for long-term wealth creation." sections={[{title:'Sigma Investments',items:['Real Estate Research','Investment Planning','Portfolio Management','Capital Appreciation Planning','Rental Yield Consulting']}]}/>} 
