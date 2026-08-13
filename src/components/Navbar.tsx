@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import { Menu, ArrowUpRight } from 'lucide-react';
+import { Menu, X, ArrowUpRight } from 'lucide-react';
 import { useState } from 'react';
 
 const links=[['About','/about'],['Projects','/projects'],['Services','/services'],['Investments','/investments'],['NRI Services','/nri-services'],['Contact','/contact']];
@@ -17,7 +17,15 @@ export default function Navbar(){
        {links.map(([l,h])=><Link key={h} href={h} onClick={()=>setOpen(false)}>{l}</Link>)}
      </nav>
      <Link className="nav-cta" href="/contact">Contact <ArrowUpRight size={16}/></Link>
-     <button className="menu" onClick={()=>setOpen(!open)} aria-label={open?'Close menu':'Open menu'}><Menu/></button>
+     <button
+       type="button"
+       className="menu"
+       onClick={()=>setOpen(!open)}
+       aria-label={open?'Close menu':'Open menu'}
+       aria-expanded={open}
+     >
+       {open ? <X size={22} strokeWidth={1.8}/> : <Menu size={22} strokeWidth={1.8}/>} 
+     </button>
    </div>
  </header>
 }
